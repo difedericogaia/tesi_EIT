@@ -1,0 +1,14 @@
+i dati come sono strutturati?
+array di quanti dati? NUM_INCR numero incrementi per frequenza, ogni frequenza = 1 dato
+salvare i dati in un array
+arduino acquisisce i dati raw e li invia, conversione nella GUI
+invia dati interi = 32 bit, 4 byte per ogni dato
+real e imag = due numeri interi per ogni acquisizione
+1 riga: real e imag per una frequenza -> matrice (32bit+32bit)xNUM_INCR
+problema: mi servirebbe il gain per calcolare impedenza quindi meglio mandare dati tutti insieme...
+
+40 dati raccolti, se ognuno sono 8 bytes dovrebbe avere 40x8 bytes 
+invece per 40 dati invia 164 bytes, perché? sono 4 bytes per ogni dato, invece ne vorremmo 8
+infatti se controllo la grandezza di 1 dato in bytes mi dice che sono 4 bytes
+
+Arduino nano non usa double-->li tratta come float quindi è corretto che siano 4 byte per dato

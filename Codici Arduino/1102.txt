@@ -1,0 +1,7 @@
+Dati 02 11 phantom 10, diametro: 22cm
+frequency sweep 16, 6cm al centro
+16 elettrodi
+calibrazione 0123
+
+baseline x2 - data x2 
+
